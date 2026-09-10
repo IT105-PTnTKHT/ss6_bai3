@@ -1,0 +1,100 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="activity" name="Activity Diagram - Dat lich kham RikkeiCare">
+    <mxGraphModel dx="1351" dy="594" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pool" parent="1" style="swimlane;horizontal=0;startSize=30;fillColor=#f5f5f5;" value="Quy trinh Dat lich kham - RikkeiCare" vertex="1">
+          <mxGeometry height="780" width="900" x="28" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="laneBN" parent="pool" style="swimlane;horizontal=0;startSize=30;fillColor=#dae8fc;" value="Bệnh nhân" vertex="1">
+          <mxGeometry height="750" width="180" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="init" parent="laneBN" style="ellipse;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="85" y="18" as="geometry" />
+        </mxCell>
+        <mxCell id="initLbl" parent="laneBN" style="text;html=1;align=center;" value="Bắt đầu&amp;nbsp;" vertex="1">
+          <mxGeometry height="20" width="90" x="55" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="actBook" parent="laneBN" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;" value="Đặt lịch khám" vertex="1">
+          <mxGeometry height="50" width="140" x="30" y="101" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="laneBN" source="init" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="actBook">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="laneLT" parent="pool" style="swimlane;horizontal=0;startSize=30;fillColor=#d5e8d4;" value="Lễ tân" vertex="1">
+          <mxGeometry height="750" width="720" x="180" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dec" parent="laneLT" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;" value="Kiểm tra khung giờ ?" vertex="1">
+          <mxGeometry height="80" width="150" x="127" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="fork" parent="laneLT" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="130" x="137" y="222" as="geometry" />
+        </mxCell>
+        <mxCell id="forkLbl" parent="laneLT" style="text;html=1;align=center;fontSize=11;" value="Fork (tách 2 nhánh song song)" vertex="1">
+          <mxGeometry height="20" width="190" x="107" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="actConfirm" parent="laneLT" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" value="Xác nhận lịch khám" vertex="1">
+          <mxGeometry height="50" width="140" x="42" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="actSMS" parent="laneLT" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" value="Gửi SMS nhắc lịch" vertex="1">
+          <mxGeometry height="50" width="140" x="250" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="join" parent="laneLT" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="130" x="137" y="366" as="geometry" />
+        </mxCell>
+        <mxCell id="joinLbl" parent="laneLT" style="text;html=1;align=center;fontSize=11;" value="Join(gộp 2 nhánh)" vertex="1">
+          <mxGeometry height="20" width="160" x="122" y="387" as="geometry" />
+        </mxCell>
+        <mxCell id="actAlt" parent="laneLT" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;" value="Báo chỗ ở khung giờ khác&amp;nbsp;" vertex="1">
+          <mxGeometry height="60" width="170" x="410" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="finalOKring" parent="laneLT" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="46" width="46" x="179" y="429" as="geometry" />
+        </mxCell>
+        <mxCell id="finalOK" parent="laneLT" style="ellipse;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="34" width="34" x="185" y="435" as="geometry" />
+        </mxCell>
+        <mxCell id="finalOKLbl" parent="laneLT" style="text;html=1;align=center;" value="Kết thúc" vertex="1">
+          <mxGeometry height="20" width="90" x="157" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="finalErrRing" parent="laneLT" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="46" width="46" x="472" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="finalErr" parent="laneLT" style="ellipse;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="34" width="34" x="478" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="finalErrLbl" parent="laneLT" style="text;html=1;align=center;" value="Kết thúc" vertex="1">
+          <mxGeometry height="20" width="90" x="450" y="235" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="laneLT" source="dec" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="fork" value="Con trong">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="laneLT" source="dec" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="actAlt" value="Hết chỗ">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="laneLT" source="fork" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="actConfirm">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="laneLT" source="fork" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="actSMS">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="laneLT" source="actConfirm" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="join">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="laneLT" source="actSMS" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="join">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="laneLT" source="join" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="finalOKring">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="laneLT" source="actAlt" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="finalErrRing">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="actBook" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="dec">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
